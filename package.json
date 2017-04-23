@@ -1,0 +1,22 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "description": "the lamest mock api ",
+  "main": "index.js",
+  "scripts": {
+    "api": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolechung/mock-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolechung/mock-api/issues"
+  },
+  "homepage": "https://github.com/nicolechung/mock-api#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

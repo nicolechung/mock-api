@@ -4,7 +4,8 @@
   "description": "the lamest mock api ",
   "main": "index.js",
   "scripts": {
-    "api": "node index.js"
+    "api": "node index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/nicolechung/mock-api#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "pm2": "^2.4.6"
+  },
+  "engines": {
+    "node": "7.9.0"
   }
 }

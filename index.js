@@ -7,6 +7,14 @@ app.use(function (req, res, next) {
   next()
 })
 
+let baseUrl = app.get('url').replace(/\/$/, '');
+console.log('Web server listening at: %s', baseUrl);
+console.log('ENV: ', app.settings.env);
+
+app.get('/', function (req, res) {
+  res.send('Hello World')
+})
+
 app.get('/api', function (req, res) {
   res.send('Hello World')
 })

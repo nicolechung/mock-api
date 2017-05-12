@@ -98,7 +98,9 @@ app.get('/api/trip/bicycle/rental', function (req, res) {
   setTimeout(callback, 3000)
 })
 
-var server = app.listen(3030, function () {
+app.set( 'port', ( process.env.PORT || 3030 ))
+
+var server = app.listen(app.get('port'), function () {
   var host = server.address().address
   var port = server.address().port
 
